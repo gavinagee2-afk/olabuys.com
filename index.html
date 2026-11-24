@@ -10,35 +10,40 @@
       html, body { margin: 0; min-height: 100%; background: #fff; }
       body { min-height: 100vh; min-height: 100dvh; }
       .header {
-        height: 140px;
-        padding-top: 32px;
+        height: 132px;
+        background: #000;
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
       }
       .logo {
         position: relative;
-        width: 114px;
-        height: 74px;
+        display: block;
+        width: 144px;
+        height: 94px;
         overflow: hidden;
         flex: 0 0 auto;
+        border-radius: 6px;
+        transition: opacity 160ms ease;
       }
+      .logo:hover { opacity: .78; }
+      .logo:focus-visible { outline: 2px solid #fff; outline-offset: 5px; }
       .logo img {
         display: block;
         position: absolute;
-        left: -27px;
-        top: -51px;
-        width: 174px;
-        height: 174px;
+        left: -34px;
+        top: -65px;
+        width: 222px;
+        height: 222px;
         max-width: none;
       }
     </style>
   </head>
   <body>
     <header class="header">
-      <div class="logo">
-        <img src="assets/ola-logo.png" alt="OLA" width="1254" height="1254">
-      </div>
+      <a class="logo" href="/" aria-label="OLA home">
+        <img src="logo-header.png" alt="OLA" width="1254" height="1254">
+      </a>
     </header>
     <main aria-label="OLA"></main>
   </body>
