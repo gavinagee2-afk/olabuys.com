@@ -8,14 +8,17 @@ Hand-written HTML and CSS for **OLA**, intended for **olabuys.com**.
 - `assets/ola-logo.png` — the original supplied black-on-white logo, unchanged.
 - `.nojekyll` — serve the files directly on GitHub Pages.
 - `CNAME` — the intended custom domain, olabuys.com. This file alone does not connect DNS.
+- `dns-records.json` — the planned website DNS records and the saved verification record. Its status distinguishes planned records from applied ones.
 
 Open `index.html` in a browser to view the site. Keep the `assets` folder beside it. No installation, build step, or internet connection is needed to view these files locally.
 
 Source repository: https://github.com/gavinagee2-afk/olabuys.com
 
+Live website: https://gavinagee2-afk.github.io/olabuys.com/
+
 The intended host is GitHub Pages for this static logo-only page. Publish from the `main` branch at `/(root)`. Configure olabuys.com in Pages before pointing DNS at it. Until the custom domain is connected, the default Pages address is https://gavinagee2-afk.github.io/olabuys.com/.
 
-The `CNAME` file belongs in the deployed root only when the custom domain is ready. Keeping the file locally does not deploy the site or change DNS.
+The `CNAME` file is prepared in the local download bundle. It belongs in the deployed root only when the custom domain is ready. Keeping the file locally does not deploy the site or change DNS. The custom-domain connection is pending; the site remains available at the GitHub Pages URL.
 
 ## Saved design decisions
 

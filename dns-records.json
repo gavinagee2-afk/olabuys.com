@@ -1,0 +1,62 @@
+{
+  "domain": "olabuys.com",
+  "source_repository": "https://github.com/gavinagee2-afk/olabuys.com",
+  "live_site": "https://gavinagee2-afk.github.io/olabuys.com/",
+  "status": "website_live_custom_domain_pending",
+  "registrar": "GoDaddy",
+  "hosting": "GitHub Pages",
+  "github_verified_domain": true,
+  "custom_domain_configured": false,
+  "website_dns_applied": false,
+  "planned_website_records": [
+    {
+      "type": "A",
+      "name": "@",
+      "value": "185.199.108.153",
+      "ttl": 3600
+    },
+    {
+      "type": "A",
+      "name": "@",
+      "value": "185.199.109.153",
+      "ttl": 3600
+    },
+    {
+      "type": "A",
+      "name": "@",
+      "value": "185.199.110.153",
+      "ttl": 3600
+    },
+    {
+      "type": "A",
+      "name": "@",
+      "value": "185.199.111.153",
+      "ttl": 3600
+    },
+    {
+      "type": "CNAME",
+      "name": "www",
+      "value": "gavinagee2-afk.github.io",
+      "ttl": 3600
+    }
+  ],
+  "applied_verification_record": {
+    "type": "TXT",
+    "name": "_github-pages-challenge-gavinagee2-afk",
+    "value": "3ed0c62518c19e91a4b6eeaf94cb00",
+    "ttl": 3600
+  },
+  "preserve_records": [
+    "NS @ ns31.domaincontrol.com.",
+    "NS @ ns32.domaincontrol.com.",
+    "SOA",
+    "CNAME _domainconnect",
+    "TXT _dmarc"
+  ],
+  "instructions": [
+    "Restore olabuys.com in GitHub Pages settings before changing website DNS.",
+    "Replace the existing Parked apex A record and existing www CNAME; do not leave conflicting records.",
+    "Keep the verification TXT and unrelated DNS records.",
+    "Verify DNS and HTTPS before marking the domain connected."
+  ]
+}
