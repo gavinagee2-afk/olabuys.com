@@ -1,35 +1,28 @@
 # OLA website
 
-Hand-written HTML and CSS for **OLA**, intended for **olabuys.com**.
+Live: https://olabuys.com/
+Source: https://github.com/gavinagee2-afk/olabuys.com
 
-## Files
+Plain HTML, CSS and a small local JavaScript form interaction. GitHub Pages publishes main at /(root); HTTPS is enabled. No framework or build step.
 
-- `index.html` — the whole page, including its CSS.
-- `assets/ola-logo.png` — the original supplied black-on-white logo, unchanged.
-- `.nojekyll` — serve the files directly on GitHub Pages.
-- `CNAME` — the intended custom domain, olabuys.com. This file alone does not connect DNS.
-- `dns-records.json` — the planned website DNS records and the saved verification record. Its status distinguishes planned records from applied ones.
+## Homepage
 
-Open `index.html` in a browser to view the site. Keep the `assets` folder beside it. No installation, build step, or internet connection is needed to view these files locally.
+Responsive home-selling page with OLA logo, original living-room hero photo, Your home. Your options. heading, address bar, and Discover OLA section. The user supplied an Opendoor screenshot as a layout reference. No third-party reviews, customer statistics, testimonials, or performance claims were copied.
 
-Source repository: https://github.com/gavinagee2-afk/olabuys.com
+Offer requests are not connected to email or CRM yet (user confirmed there is no destination). The address interaction displays an explicit opening-soon message. It does not send or store addresses. Connect a real endpoint before claiming requests are submitted.
 
-Live website: https://gavinagee2-afk.github.io/olabuys.com/
+## Branding and search
 
-The intended host is GitHub Pages for this static logo-only page. Publish from the `main` branch at `/(root)`. Configure olabuys.com in Pages before pointing DNS at it. Until the custom domain is connected, the default Pages address is https://gavinagee2-afk.github.io/olabuys.com/.
+- Page logo: assets/ola-logo.png (original black script mark on white).
+- Browser-tab favicon: favicon.svg embeds the newly supplied geometric white OLA on black, enlarged by SVG framing.
+- Preserve the Google Search Console verification meta tag in index.html. URL-prefix property https://olabuys.com/ is verified; sitemap submitted.
+- robots.txt and sitemap.xml are served from the root.
+- CNAME contains olabuys.com. GoDaddy A @ points to 185.199.108.153; www CNAME points to gavinagee2-afk.github.io.
 
-The `CNAME` file is prepared in the local download bundle. It belongs in the deployed root only when the custom domain is ready. Keeping the file locally does not deploy the site or change DNS. The custom-domain connection is pending; the site remains available at the GitHub Pages URL.
+## Hero image
 
-## Saved design decisions
+hero-home.png was created with the built-in Image Generation tool, then copied into this project. Prompt: Original editorial photograph of a welcoming lived-in American living room with warm afternoon light, cream sofa, oak coffee table, leafy plant, tall windows, natural linen and wood; quiet upper-center wall for a text overlay; no people, text, logos, or watermark.
 
-- The brand is OLA; olabuys.com is the domain, not the displayed brand name.
-- Only the exact supplied logo appears in a centered header.
-- The rest of the page is blank white, with no visible text, menus, buttons, or footer.
-- Use normal code for future edits. Do not move this project into Lovable, GoDaddy Airo, or another AI website builder.
-- No JavaScript, analytics, cookies, external dependencies, or database are used.
+## Verification
 
-The logo's outer white margins are hidden with CSS, without editing its image file. Keep its rendered width and height equal to preserve the original proportions.
-
-## Last verified
-
-2026-11-24: desktop and 390px mobile layouts checked. The logo loads, the page has no visible text, and the mobile layout has no horizontal overflow. Check the repository's Pages settings for current deployment and custom-domain status.
+2026-11-24: desktop and 390px mobile browser layouts checked, no horizontal overflow. Address interaction tested and clearly states nothing was submitted.

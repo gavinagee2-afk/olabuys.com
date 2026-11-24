@@ -15,44 +15,44 @@
     <meta property="og:url" content="https://olabuys.com/">
     <meta property="og:type" content="website">
     <style>
-      * { box-sizing: border-box; }
-      html, body { margin: 0; min-height: 100%; background: #fff; }
-      body { min-height: 100vh; min-height: 100dvh; }
-      .header {
-        height: 140px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .logo {
-        position: relative;
-        display: block;
-        width: 144px;
-        height: 94px;
-        overflow: hidden;
-        flex: 0 0 auto;
-        border-radius: 6px;
-        transition: opacity 160ms ease;
-      }
-      .logo:hover { opacity: .78; }
-      .logo:focus-visible { outline: 2px solid #000; outline-offset: 5px; }
-      .logo img {
-        display: block;
-        position: absolute;
-        left: -34px;
-        top: -65px;
-        width: 222px;
-        height: 222px;
-        max-width: none;
-      }
+      *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:#20211f;font-family:Arial,Helvetica,sans-serif}button,input{font:inherit}a{color:inherit}button,a,input{-webkit-tap-highlight-color:transparent}button{cursor:pointer}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #1649ef;outline-offset:4px}
+      .header{max-width:1440px;margin:auto;height:96px;padding:0 56px;display:flex;align-items:center;justify-content:space-between;gap:24px}.logo{position:relative;display:block;width:94px;height:61px;overflow:hidden;flex:none}.logo img{position:absolute;left:-22px;top:-42px;width:145px;height:145px;max-width:none}.nav{display:flex;align-items:center;gap:34px}.nav a{text-decoration:none;font-size:16px;font-weight:600}.nav a:hover{text-decoration:underline;text-underline-offset:5px}.nav .offer-link{border:1px solid #dddcd8;border-radius:14px;padding:15px 22px;box-shadow:0 3px 0 #eeede9}
+      .hero{position:relative;isolation:isolate;min-height:710px;min-height:min(780px,calc(100svh - 112px));margin:0 18px;border-radius:32px;overflow:hidden;background:#665b4a;display:flex;justify-content:center;text-align:center;color:white}.hero:before{content:'';position:absolute;inset:0;z-index:-2;background:url('hero-home.png') center 56%/cover no-repeat}.hero:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(16,24,20,.54),rgba(16,24,20,.20) 64%,rgba(16,24,20,.55))}.hero-content{width:100%;padding:64px 24px 32px;display:flex;flex-direction:column;align-items:center}.hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(44px,5.4vw,80px);font-weight:600;letter-spacing:-3px;line-height:1.07;margin:0 0 24px;text-wrap:balance}.intro{font-size:clamp(18px,1.6vw,23px);line-height:1.45;margin:0 0 32px;max-width:660px}.address-form{width:min(100%,700px);background:white;border:1px solid #e7e3dd;border-radius:23px;padding:9px;display:flex;align-items:center;gap:10px;box-shadow:0 8px 30px #00000012}.pin{flex:none;margin-left:13px;color:#787970;width:23px;height:23px}.address-form input{width:100%;min-width:0;border:0;background:none;color:#272923;padding:16px 0;font-size:18px;outline-offset:0}.address-form input::placeholder{color:#77786e}.address-form button{width:58px;height:58px;flex:none;border:1px solid #6983ff;background:#1649ef;color:white;border-radius:16px;box-shadow:inset 0 -3px 0 #0033bd;display:grid;place-items:center}.address-form button:hover{background:#103bd0}.address-form button svg{width:25px;height:25px}.form-note{font-size:14px;margin:16px 0 0;color:#f8f8f4;line-height:1.5}.form-status{max-width:650px;border-radius:12px;background:#fff;color:#252b24;padding:16px 22px;font-size:16px;line-height:1.5;margin-top:16px}.form-status[hidden]{display:none}.hero-bottom{margin-top:auto;padding-top:90px;display:flex;justify-content:center;gap:56px;align-items:center;font-size:17px;line-height:1.4}.hero-bottom span{display:block}.hero-bottom strong{display:block;font-weight:600;margin-bottom:5px;font-size:19px}.divider{width:1px;align-self:stretch;background:#ffffff50}
+      .section{max-width:1240px;margin:auto;padding:90px 48px}.section-heading{display:flex;justify-content:space-between;align-items:start;gap:40px}.eyebrow{font-size:14px;font-weight:700;letter-spacing:1.7px;text-transform:uppercase;margin:0 0 16px;color:#52584c}.section h2{font-family:Georgia,'Times New Roman',serif;font-weight:500;font-size:clamp(34px,3.2vw,48px);letter-spacing:-1.5px;line-height:1.12;max-width:620px;margin:0}.section .section-intro{max-width:390px;font-size:18px;line-height:1.65;margin:0;color:#5a5d55}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:52px}.step{border-top:1px solid #d9ddd3;padding-top:26px}.step svg{width:30px;height:30px;stroke:#344430;stroke-width:1.4;fill:none}.step h3{font-size:21px;font-weight:600;letter-spacing:-.3px;margin:23px 0 12px}.step p{font-size:17px;line-height:1.65;color:#5a5d55;margin:0}.footer{max-width:1344px;margin:auto;padding:30px 48px;border-top:1px solid #e4e6df;display:flex;justify-content:space-between;gap:25px;color:#72776b;font-size:14px}.footer a{text-underline-offset:4px}.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+      @media(max-width:700px){.header{height:82px;padding:0 24px}.logo{width:77px;height:51px}.logo img{width:119px;height:119px;left:-18px;top:-35px}.nav{gap:16px}.nav a{font-size:14px}.nav .discover-link{display:none}.nav .offer-link{padding:12px 15px;border-radius:12px}.hero{margin:0 10px;border-radius:24px;min-height:650px}.hero-content{padding:48px 20px 28px}.hero h1{letter-spacing:-1.6px;font-size:49px;max-width:390px}.intro{font-size:18px;line-height:1.5;margin-bottom:26px}.address-form{padding:7px;border-radius:18px;gap:8px}.pin{margin-left:5px;width:20px}.address-form input{font-size:16px;padding:13px 0}.address-form button{width:48px;height:48px;border-radius:13px}.hero-bottom{gap:20px;font-size:14px;padding-top:100px}.hero-bottom strong{font-size:16px}.section{padding:60px 28px}.section-heading{display:block}.section .section-intro{margin-top:24px}.steps{grid-template-columns:1fr;gap:30px;margin-top:38px}.step h3{margin-top:16px}.footer{padding:25px 28px;flex-wrap:wrap}.hero:before{background-position:61% center}}
+      @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
     </style>
   </head>
   <body>
     <header class="header">
-      <a class="logo" href="/" aria-label="OLA home">
-        <img src="assets/ola-logo.png" alt="OLA" width="1254" height="1254">
-      </a>
+      <a class="logo" href="/" aria-label="OLA home"><img src="assets/ola-logo.png" alt="OLA" width="1254" height="1254"></a>
+      <nav class="nav" aria-label="Main navigation"><a class="discover-link" href="#discover">Discover OLA</a><a class="offer-link" href="#offer">Get a cash offer</a></nav>
     </header>
-    <main aria-label="OLA"></main>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <h1 id="hero-title">Your home. Your options.</h1>
+          <p class="intro">Explore a cash offer for your home.<br>Discover a simpler way to take your next step.</p>
+          <form class="address-form" id="offer" aria-label="Explore your home offer">
+            <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.7"/></svg>
+            <label class="visually-hidden" for="address">Home address</label><input id="address" name="address" autocomplete="street-address" placeholder="Enter your home address" required maxlength="240">
+            <button type="submit" aria-label="Explore a cash offer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg></button>
+          </form>
+          <p class="form-note">Online offer requests are opening soon.</p>
+          <div class="form-status" id="form-status" role="status" hidden>We're getting ready to welcome your home. Online offer requests aren't open yet, so your address hasn't been sent. Please check back soon.</div>
+          <div class="hero-bottom" aria-label="Our approach"><span><strong>Your home</strong>A new possibility</span><div class="divider" aria-hidden="true"></div><span><strong>Your options</strong>Room to explore</span><div class="divider" aria-hidden="true"></div><span><strong>Your next chapter</strong>At your pace</span></div>
+        </div>
+      </section>
+      <section class="section" id="discover" aria-labelledby="discover-title">
+        <p class="eyebrow">Discover OLA</p><div class="section-heading"><h2 id="discover-title">A fresh start begins<br>with knowing your options.</h2><p class="section-intro">Selling a home is a personal decision. OLA is building a simpler way to explore a cash sale, so you can think about what comes next.</p></div>
+        <div class="steps">
+          <article class="step"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m4 15 12-10 12 10M8 12v15h16V12M13 27v-9h6v9"/></svg><h3>Start with your home</h3><p>Your address is the starting point for exploring a possible cash offer.</p></article>
+          <article class="step"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="7" y="4" width="18" height="24" rx="2"/><path d="M12 11h8m-8 5h8m-8 5h5"/></svg><h3>Understand your options</h3><p>Consider what a cash sale could mean for your plans before deciding on a next step.</p></article>
+          <article class="step"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12"/><path d="M16 9v8l5 3"/></svg><h3>Choose what comes next</h3><p>Whether you're ready to move or just looking ahead, start with a clearer picture.</p></article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><span>© <span id="year">2026</span> OLA</span><span>Home sales begin with a conversation.</span><a href="#offer">Explore your options</a></footer>
+    <script>document.getElementById('offer').addEventListener('submit',function(event){event.preventDefault();document.getElementById('form-status').hidden=false;});</script>
   </body>
 </html>
