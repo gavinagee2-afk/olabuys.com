@@ -1,28 +1,26 @@
 # OLA website
 
 Live: https://olabuys.com/
-Source: https://github.com/gavinagee2-afk/olabuys.com
+Repository: https://github.com/gavinagee2-afk/olabuys.com
 
-Plain HTML, CSS and a small local JavaScript form interaction. GitHub Pages publishes main at /(root); HTTPS is enabled. No framework or build step.
+## Current design
 
-## Homepage
+The user requested an exact visual match to millenniumcashbuyers.com and explicitly confirmed OLA is the same business and authorized carrying over the owner biography, contact details, service areas, reviews, and renovation photos. The reference layouts and styles were adapted to static HTML/CSS, with local image/font assets and OLA business text. Original review quotations preserve the Millennium Cash Buyers name.
 
-Responsive home-selling page with OLA logo, original living-room hero photo, Your home. Your options. heading, address bar, and Discover OLA section. The user supplied an Opendoor screenshot as a layout reference. No third-party reviews, customer statistics, testimonials, or performance claims were copied.
+The user explicitly requested the actual ALO logo. alo-logo.svg and alo-favicon.png were obtained from the official aloyoga.com page and applied as requested. The business text and domain remain OLA and olabuys.com.
 
-Offer requests are not connected to email or CRM yet (user confirmed there is no destination). The address interaction displays an explicit opening-soon message. It does not send or store addresses. Connect a real endpoint before claiming requests are submitted.
+67 static pages including home, how it works, about, contact, service areas, seller situations, policies, and linked blog articles. All page files are at the root and navigation uses .html URLs to work directly on GitHub Pages.
 
-## Branding and search
+## Functionality
 
-- Page logo: assets/ola-logo.png (original black script mark on white).
-- Browser-tab favicon: favicon.svg embeds the newly supplied geometric white OLA on black, enlarged by SVG framing.
-- Preserve the Google Search Console verification meta tag in index.html. URL-prefix property https://olabuys.com/ is verified; sitemap submitted.
-- robots.txt and sitemap.xml are served from the root.
-- CNAME contains olabuys.com. GoDaddy A @ points to 185.199.108.153; www CNAME points to gavinagee2-afk.github.io.
+ola-site.js handles mobile and seller menus, review expansion/navigation, owner biography expansion, before-and-after sliders and photo selection.
 
-## Hero image
+Offer forms prepare an email addressed to millenniumcashbuyers@gmail.com. They open the visitor's email app and explicitly require pressing Send there. This is not automatic backend delivery; no server, SMTP service, CRM, or SMS provider has been connected. The original reference server/React scripts and analytics were removed. Do not show a sent confirmation before actual delivery.
 
-hero-home.png was created with the built-in Image Generation tool, then copied into this project. Prompt: Original editorial photograph of a welcoming lived-in American living room with warm afternoon light, cream sofa, oak coffee table, leafy plant, tall windows, natural linen and wood; quiet upper-center wall for a text overlay; no people, text, logos, or watermark.
+## Deployment and search
 
-## Verification
+GitHub Pages main / root. Preserve CNAME and Google Search Console meta verification. URL-prefix Search Console property is verified. Sitemap lists the local static pages. GoDaddy A @ = 185.199.108.153; www CNAME = gavinagee2-afk.github.io. HTTPS is enforced.
 
-2026-11-24: desktop and 390px mobile browser layouts checked, no horizontal overflow. Address interaction tested and clearly states nothing was submitted.
+## Checks
+
+2026-11-25: desktop/mobile visual checks, 390px layout without horizontal overflow, mobile menu, review navigation, comparison slider, and local file/link checks.
